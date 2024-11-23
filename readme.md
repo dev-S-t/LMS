@@ -1,6 +1,6 @@
 # **API Documentation: Smart Learning Assistant Chatbot**
 
-## **Base URL**
+## **Base URL**(deployed on render except some latency and cold reboots)
 `[https://<your-api-url>.onrender.com](https://lms-hk98.onrender.com)`
 
 ---
