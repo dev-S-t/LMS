@@ -12,6 +12,17 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 
+
+from fastapi.middleware.cors import CORSMiddleware
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
 # Load environment variables from the .env file
 load_dotenv()
 
